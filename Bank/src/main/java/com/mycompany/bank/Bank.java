@@ -10,5 +10,7 @@ package com.mycompany.bank;
  * @author marlon
  */
 public class Bank {
-    
+    public static void main(String ...args) {
+        
+    }
 }
