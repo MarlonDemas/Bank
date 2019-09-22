@@ -10,7 +10,10 @@ package com.mycompany.bank;
  * @author marlon
  */
 public class Bank {
-    public static void main(String ...args) {
+    public static void main(String ...args) throws Exception {
         
+        CreditAccount one = new CreditAccount("Marlon", "Demas", 123456789, 1000, 2500, 800);
+        
+        DebitAccount two = new DebitAccount("Marlon", "Demas", 123456789, 600, 2500, 800);
     }
 }
