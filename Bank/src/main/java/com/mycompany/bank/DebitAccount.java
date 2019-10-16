@@ -19,7 +19,7 @@ public class DebitAccount extends BankAccount{
     public double withdraw(double amount) throws Exception {
         
         if(getBalance() - amount < 0) {
-            throw new Exception();
+            throw new LimitException("Issufficient amount withdrawn. Amount exceeded current balance availible.");
         }
         
         return super.withdraw(amount);

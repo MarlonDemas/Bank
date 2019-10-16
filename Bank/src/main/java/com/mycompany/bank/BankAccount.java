@@ -30,9 +30,9 @@ public abstract class BankAccount {
     public double withdraw(double amount) throws Exception {
         
         if(amount > transactionLimit) {
-            throw new Exception();
+            throw new LimitException("Trasaction Limit exceeded");
         } else if(withdrawLimit - amount < 0) {
-            throw new Exception();
+            throw new LimitException("Withdrawal Limit exceeded");
         } else {
             balance -= amount;
             withdrawLimit -= amount;
